@@ -1,0 +1,147 @@
+html, body, div, img, a, h1, h2, h3, h4{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+h1{
+    width: auto;
+    height: auto;
+    margin: 5px;
+    padding: 5px;
+    font-size: 50px;
+}
+
+h2{
+    margin: 5px;
+    padding: 5px;
+    font-size: 25px;
+    color: black;
+}
+
+p{
+    margin: 5px;
+    padding: 5px;
+}
+
+hr { 
+    width:5%; 
+    border-top: 1px solid red;
+}
+
+body{
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+.centerText{
+    text-align: center;
+}
+.heroText{
+    margin: auto;
+    padding: 5px;
+    color: white;
+}
+
+.heroImage{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/bg.jpg");
+    background-color: lightblue;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.sectionTitle{
+    margin: 20px auto;
+}
+
+.gridContainer{
+    height: 100%;
+    max-width: 80%;
+    margin: 20px auto;
+}
+
+.photos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.photos img{
+    max-width: 400px;
+}
+
+.contactGrid{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contactGrid div{
+    width: 11rem;
+    max-width: 13rem;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+  }
+
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup .close:hover {
+    color: red;
+  }
+  .popup .description {
+    max-height: 50%;
+    overflow: auto;
+  }
+
+  a {
+      margin: 0;
+      padding: 0;
+  }
+  
